@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application website using Tailwinf</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
+
+        <!-- fontawesome kits -->
+        <script src="https://kit.fontawesome.com/c8cd5d7521.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind styles here -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: '#2E937A',
+                        secondary: '#F1F9F7',
+                        primary: '#C8E8E0',
+                        btnprimary: '#2E937A',
+                        footercolor: '#333333',
+                    },
+                    fontFamily: {
+                        'sourcesans': ['Source Sans Pro', 'sans-serif'],
+                        'opensans': ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="bg-white">
+        <div class="max-w-7xl mx-auto flex items-center h-20 px-5">
+            <img src="images/logo.png" alt="">
+        </div>
+    </header>
+
+    <!-- section 1 -->
+    <section class="bg-secondary px-5 p-20">
+        <div class="max-w-7xl mx-auto md:flex items-center bg-white justify-between">
+            <!-- title & description -->
+            <div class="font-opensans bg-white px-8 md:w-1/2 mb-5">
+                <h4 class="text-2xl py-5 mt-15 pt-20">ABOUT US</h4>
+                <h1 class="text-4xl font-sourcesans pb-7">1000+ customer using Our application.</h1>
+                <ul class="px-5 text-xl pb-5">
+                    <!-- list items -->
+                    <li><i class="fa-solid fa-play text-yellow-400 mr-2 py-1.5"></i> Powerful and flexible them</li>
+                    <li><i class="fa-solid fa-play text-yellow-400 mr-2 py-1.5"></i> Simple, transparent pricing</li>
+                    <li><i class="fa-solid fa-play text-yellow-400 mr-2 py-1.5"></i> Build tools and full documentation</li>
+                </ul>
+                <!-- button -->
+                <button class="bg-btnprimary hover:bg-amber-200 hover:text-black text-white font-bold py-3 px-8 rounded-full my-5 mb-20">
+                    READ MORE
+                  </button>
+            </div>
+            <!-- image -->
+            <div class="bg-primary md:w-1/2">
+                <div>
+                    <img src="images/phone-min.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-footercolor">
+        <p class="text-white max-w-7xl mx-0 text-center py-5 px-5">@copyrigh 2023 || All Rights Preserved by Nicepage || Developed By Jack</p>
+    </footer>
+
+</body>
+
+</html>
